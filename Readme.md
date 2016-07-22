@@ -1,0 +1,1 @@
+This is a gate plugin that uses the Receptiviti API to access LIWC features.

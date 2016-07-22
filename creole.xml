@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!-- $Id: creole.xml 11850 2009-10-30 15:22:04Z ian_roberts $ -->
+<CREOLE-DIRECTORY>
+  <JAR SCAN="true">LIWCFeatureExtractor.jar</JAR>
+  <JAR>lib/json-simple-1.1.1.jar</JAR>
+  <JAR>lib/personality-LIWC.jar</JAR>
+    <JAR>lib/commons-httpclient-3.1.jar</JAR>
+  
+    <JAR>lib/httpcore-4.4.4.jar</JAR>
+  
+</CREOLE-DIRECTORY>
