@@ -5,8 +5,6 @@ import java.io.UnsupportedEncodingException;
 import java.util.Iterator;
 import java.util.Map;
 
-import org.springframework.beans.factory.annotation.Required;
-
 import gate.AnnotationSet;
 import gate.Factory;
 import gate.FeatureMap;
@@ -68,7 +66,6 @@ public class LIWCFeatureExtraction extends AbstractLanguageAnalyser {
 			}
 	  }
 	  
-	  @Optional
 	  @RunTime
 	  @CreoleParameter(defaultValue = "Original markups", comment = "annotation name to be set")
 	  public void setInputASName(String inputASName) {
@@ -79,7 +76,6 @@ public class LIWCFeatureExtraction extends AbstractLanguageAnalyser {
 	    return this.inputASName;
 	  }
 
-	  @Optional
 	  @RunTime
 	  @CreoleParameter(defaultValue = "4", comment = "LIWC text type codes 0-6. 4 means social media (e.g. tweet), for more information see http://www.receptiviti.ai/receptiviti-api-user-manual/")
 	  public void setTextSourceType(String sourceType) {
@@ -91,7 +87,6 @@ public class LIWCFeatureExtraction extends AbstractLanguageAnalyser {
 	  }
 
 	  
-	  @Optional
 	  @RunTime
 	  @CreoleParameter(defaultValue = "Tweet", comment = "annotation type to be set")
 	  public void setAnnotationType(String annotationType) {
@@ -103,8 +98,7 @@ public class LIWCFeatureExtraction extends AbstractLanguageAnalyser {
 	  }
 
 
-	  @Required
-	  @CreoleParameter(defaultValue = "", comment = "api key for using liwc")
+	  @CreoleParameter(comment = "api key for using liwc")
 	  public void setAPIKey(String apiKey) {
 	    this.apiKey = apiKey;
 	  }
@@ -114,8 +108,7 @@ public class LIWCFeatureExtraction extends AbstractLanguageAnalyser {
 	  }
 
 
-	  @Required
-	  @CreoleParameter(defaultValue = "", comment = "secret api key for using liwc")
+	  @CreoleParameter(comment = "secret api key for using liwc")
 	  public void setSecrectAPIKey(String secretApiKey) {
 	    this.secrectApiKey = secretApiKey;
 	  }
